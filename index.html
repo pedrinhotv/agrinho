@@ -4,7 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natação</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #0d47a1;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #1976d2 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main-content {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+        }
+        .main-content section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #bbdefb;
+            border: 1px solid #90caf9;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0d47a1;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #90caf9;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        .reportagem {
+            background: #e3f2fd;
+            padding: 20px;
+            border: 1px solid #90caf9;
+        }
+        .indice {
+            padding: 20px;
+            background: #bbdefb;
+            border: 1px solid #90caf9;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,19 +84,32 @@
                 <li><a href="#regras">Regras</a></li>
                 <li><a href="#tipos-nado">Tipos de Nado</a></li>
                 <li><a href="#competicoes">Competições</a></li>
+                <li><a href="#reportagem">Reportagem</a></li>
+                <li><a href="#nados-completo">Nados Completo</a></li>
             </ul>
         </div>
     </header>
     <div class="container main-content">
+        <section class="indice">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#tipos-piscina">Tipos de Piscina</a></li>
+                <li><a href="#regras">Regras</a></li>
+                <li><a href="#tipos-nado">Tipos de Nado</a></li>
+                <li><a href="#competicoes">Competições</a></li>
+                <li><a href="#reportagem">Reportagem</a></li>
+                <li><a href="#nados-completo">Nados Completo</a></li>
+            </ul>
+        </section>
         <section id="tipos-piscina">
             <h2>Tipos de Piscina</h2>
-            <img src="0684f95d122cbb3419d94956d8c9d2fb.jpg" alt="piscina" width="50%">
+            <img src="Estádio Aquático_Brasil 2016.jpg" alt="" width="100%">
             <p>As piscinas para natação competitiva são geralmente divididas em dois tipos: piscina olímpica (50 metros) e piscina semiolímpica (25 metros).</p>
         </section>
         <section id="regras">
             <h2>Regras</h2>
             <p>As principais regras da natação incluem a largada, virada e chegada. Cada estilo de nado possui suas próprias regras específicas, que devem ser seguidas para evitar a desclassificação.</p>
-            <video width="50%" controls>
+            <video width="100%" controls>
                 <source src="https://example.com/video_regras.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
@@ -51,9 +133,27 @@
             <h2>Nados Completo</h2>
             <p>A natação inclui quatro estilos principais de nado: crawl, costas, peito e borboleta. Cada um desses estilos tem suas próprias técnicas e regras específicas.</p>
         </section>
+        <section id="reportagem" class="reportagem">
+            <h2>Reportagem</h2>
+            <h3>Histórias Inspiradoras de Nadadores</h3>
+            <p>Leia sobre as incríveis jornadas de nadadores que superaram desafios para alcançar o sucesso nas competições.</p>
+            <p>Assista à nossa reportagem especial:</p>
+            <video width="100%" controls>
+                <source src="https://example.com/video_reportagem.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
     </div>
     <footer>
-        <p>Natação &copy; 2024</p>
+        <p>Natação &copy; 2024. Todos os direitos reservados.</p>
+        <p>
+            <a href="#tipos-piscina">Tipos de Piscina</a> |
+            <a href="#regras">Regras</a> |
+            <a href="#tipos-nado">Tipos de Nado</a> |
+            <a href="#competicoes">Competições</a> |
+            <a href="#reportagem">Reportagem</a> |
+            <a href="#nados-completo">Nados Completo</a>
+        </p>
     </footer>
 </body>
 </html>
