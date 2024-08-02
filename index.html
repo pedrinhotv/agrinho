@@ -3,157 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natação</title>
+    <title>Site de Natação</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background: linear-gradient(to bottom, #6a0dad, #1e90ff);
+            color: #fff;
             margin: 0;
             padding: 0;
-            background-color: #e3f2fd;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
         }
         header {
-            background: #0d47a1;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #1976d2 3px solid;
+            text-align: center;
+            padding: 20px;
         }
-        header a {
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
             color: #fff;
+            margin: 0 15px;
             text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
         }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        .main-content {
+        section {
             padding: 20px;
-            background: #fff;
-            margin: 20px 0;
-        }
-        .main-content section {
-            margin-bottom: 20px;
-            padding: 20px;
-            background: #bbdefb;
-            border: 1px solid #90caf9;
         }
         footer {
             text-align: center;
-            padding: 20px;
-            background: #0d47a1;
-            color: #fff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 10px;
+            background: #333;
         }
-        footer a {
-            color: #90caf9;
-            text-decoration: none;
-            padding: 0 10px;
+        img {
+            max-width: 100%;
         }
-        .reportagem {
-            background: #e3f2fd;
-            padding: 20px;
-            border: 1px solid #90caf9;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        .indice {
-            padding: 20px;
-            background: #bbdefb;
-            border: 1px solid #90caf9;
+        .gif {
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Natação</h1>
-            <ul>
-                <li><a href="#tipos-piscina">Tipos de Piscina</a></li>
-                <li><a href="#regras">Regras</a></li>
-                <li><a href="#tipos-nado">Tipos de Nado</a></li>
-                <li><a href="#competicoes">Competições</a></li>
-                <li><a href="#reportagem">Reportagem</a></li>
-                <li><a href="#nados-completo">Nados Completo</a></li>
-            </ul>
-        </div>
+        <h1>Bem-vindo ao Site de Natação</h1>
     </header>
-    <div class="container main-content">
-        <section class="indice">
-            <h2>Índice</h2>
-            <ul>
-                <li><a href="#tipos-piscina">Tipos de Piscina</a></li>
-                <li><a href="#regras">Regras</a></li>
-                <li><a href="#tipos-nado">Tipos de Nado</a></li>
-                <li><a href="#competicoes">Competições</a></li>
-                <li><a href="#reportagem">Reportagem</a></li>
-                <li><a href="#nados-completo">Nados Completo</a></li>
-            </ul>
+    <nav>
+        <a href="#tipos-de-nados">Tipos de Nados</a>
+        <a href="#regras-dos-nados">Regras dos Nados</a>
+        <a href="#piscina">A Piscina</a>
+        <a href="#reportagem">Reportagem</a>
+    </nav>
+    <div class="container">
+        <section id="tipos-de-nados">
+            <h2>Tipos de Nados</h2>
+            <p>Existem quatro tipos principais de nados na natação competitiva: crawl, costas, peito e borboleta.</p>
+            <img src="https://example.com/nado-crawl.jpg" alt="Nado Crawl">
+            <img src="https://example.com/nado-costas.jpg" alt="Nado Costas">
+            <img src="https://example.com/nado-peito.jpg" alt="Nado Peito">
+            <img src="https://example.com/nado-borboleta.jpg" alt="Nado Borboleta">
         </section>
-        <section id="tipos-piscina">
-            <h2>Tipos de Piscina</h2>
-            <img src="Estádio Aquático_Brasil 2016.jpg" alt="" width="50%">
-            <p>As piscinas para natação competitiva são geralmente divididas em dois tipos: piscina olímpica (50 metros) e piscina semiolímpica (25 metros).</p>
+        <section id="regras-dos-nados">
+            <h2>Regras dos Nados</h2>
+            <h3>Nado Crawl</h3>
+            <p>No nado crawl, os nadadores devem alternar os braços enquanto batem as pernas de forma contínua.</p>
+            <h3>Nado Costas</h3>
+            <p>O nado costas é realizado de costas, com movimentos alternados dos braços e batida de pernas.</p>
+            <h3>Nado Peito</h3>
+            <p>No nado peito, os nadadores movem os braços e as pernas simultaneamente de forma circular.</p>
+            <h3>Nado Borboleta</h3>
+            <p>O nado borboleta envolve o movimento simultâneo dos braços enquanto as pernas realizam a batida de golfinho.</p>
         </section>
-        <section id="regras">
-            <h2>Regras</h2>
-            <p>As principais regras da natação incluem a largada, virada e chegada. Cada estilo de nado possui suas próprias regras específicas, que devem ser seguidas para evitar a desclassificação.</p>
-            <video width="100%" controls>
-                <source src="https://youtu.be/p2ENdqC9isg" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
+        <section id="piscina">
+            <h2>A Piscina</h2>
+            <p>A piscina oficial para competições de natação deve ter 50 metros de comprimento, com oito raias de 2,5 metros cada.</p>
+            <img src="https://example.com/piscina.jpg" alt="Piscina de Natação">
         </section>
-        <section id="tipos-nado">
-            <h2>Tipos de Nado</h2>
-            <h3>Crawl</h3>
-            <p>O crawl é o estilo de nado mais rápido e popular. É caracterizado por um movimento alternado dos braços e um movimento de batida de pernas.</p>
-            <h3>Costas</h3>
-            <p>O nado de costas é nadado de costas com um movimento alternado dos braços e uma batida de pernas contínua.</p>
-            <h3>Peito</h3>
-            <p>O nado peito é caracterizado por um movimento simultâneo dos braços em um arco e uma batida de pernas em forma de sapo.</p>
-            <h3>Borboleta</h3>
-            <p>O nado borboleta é nadado com um movimento simultâneo dos braços e uma batida de pernas em forma de golfinho.</p>
-        </section>
-        <section id="competicoes">
-            <h2>Competições</h2>
-            <p>As competições de natação podem ser realizadas em piscinas olímpicas ou semiolímpicas, e incluem provas de diferentes distâncias e estilos. As competições podem ser individuais ou em revezamento.</p>
-        </section>
-        <section id="nados-completo">
-            <h2>Nados Completo</h2>
-            <p>A natação inclui quatro estilos principais de nado: crawl, costas, peito e borboleta. Cada um desses estilos tem suas próprias técnicas e regras específicas.</p>
-        </section>
-        <section id="reportagem" class="reportagem">
+        <section id="reportagem">
             <h2>Reportagem</h2>
-            <h3>Histórias Inspiradoras de Nadadores</h3>
-            <p>Leia sobre as incríveis jornadas de nadadores que superaram desafios para alcançar o sucesso nas competições.</p>
-            <p>Assista à nossa reportagem especial:</p>
-            <video width="100%" controls>
-                <source src="https://example.com/video_reportagem.mp4" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
+            <p>Confira a seguir uma reportagem sobre os benefícios da natação para a saúde e bem-estar.</p>
+            <img class="gif" src="https://example.com/reportagem.gif" alt="Reportagem sobre Natação">
         </section>
     </div>
     <footer>
-        <p>Natação &copy; 2024. Todos os direitos reservados.</p>
-        <p>
-            <a href="#tipos-piscina">Tipos de Piscina</a> |
-            <a href="#regras">Regras</a> |
-            <a href="#tipos-nado">Tipos de Nado</a> |
-            <a href="#competicoes">Competições</a> |
-            <a href="#reportagem">Reportagem</a> |
-            <a href="#nados-completo">Nados Completo</a>
-        </p>
+        <p>&copy; 2024 Site de Natação. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
